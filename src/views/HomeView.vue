@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6" style="margin-top: 6%">
+      <div class="col-lg-6" style="margin-top: 4%">
         <div class="me">
           <img
             style="width: 70%; margin-right: 10%"
