@@ -75,7 +75,7 @@
 
 .fundo {
   align-items: center;
-  padding: 20%;
+  padding: 10%;
   background-color: rgb(223, 222, 222);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;

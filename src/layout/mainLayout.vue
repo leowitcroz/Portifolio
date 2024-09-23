@@ -1,10 +1,10 @@
 <template>
   <div class="nav">
     <div class="logo">
-      <img style="width: 25%;" src="../assets/logo_.png" alt="">
+      <img style="width: 25%" src="../assets/logo_.png" alt="" />
     </div>
     <div class="options">
-      <p class="items">About</p>
+      <p class="items" @click="goTo('/about')">About</p>
       <p class="items">Work</p>
       <p class="items">Experience</p>
       <p class="items">Contact</p>
@@ -13,6 +13,16 @@
   </div>
   <router-view />
 </template>
+
+<script lang="ts" setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function goTo(route: string) {
+  router.push(route);
+}
+</script>
 
 <style>
 .nav {
@@ -25,7 +35,7 @@
   display: flex;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,4 +53,5 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
 </style>
